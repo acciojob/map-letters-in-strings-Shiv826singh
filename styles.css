@@ -1,1 +1,79 @@
 /*  your css code here. If applicable */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+#wordInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+#wordInput:focus {
+    border-color: #667eea;
+}
+
+#mapButton {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#mapButton:hover {
+    background: #5568d8;
+}
+
+.result {
+    margin-top: 25px;
+}
+
+.result h2 {
+    color: #333;
+}
+
+#output {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 6px;
+    min-height: 50px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: #222;
+}
